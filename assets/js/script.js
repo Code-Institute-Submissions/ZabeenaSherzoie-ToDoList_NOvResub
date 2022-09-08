@@ -4,6 +4,7 @@ let today = Date.now();
 let todayDate = new Date(today);
 document.getElementById('current-date').innerHTML = todayDate.toDateString();
 //functions
+//Adding task fuction
 function addTodo(event){
     event.preventDefault();
     //adding todo div
@@ -31,3 +32,23 @@ function addTodo(event){
     // clear todo input value
     todoInput.value = "";
 }
+//function to check whether to be marked as completed or delete
+function deleteCheck(e){
+    const item=e.target;
+    //delete
+    if (item.classList[0]==='trash-btn'){
+        const todo = item.parentElement;
+    // delete animation
+    todo.classList.add('fall');
+    removeLocalTodos(todo);
+    todo.addEventListener("transitioned",function(){
+        todo.remove();
+    });
+    }
+    //completed
+    if (item.classList[0]==='complete-btn'){
+        const todo = item.parentElement;
+        todo.classList.toggle("completed");
+    }
+}
+
