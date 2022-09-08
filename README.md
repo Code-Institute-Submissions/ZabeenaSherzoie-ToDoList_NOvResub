@@ -78,7 +78,7 @@ I got stuck on how to change the place of input element and select element when 
 - CSS files pass through the [Jigsaw validator](https://jigsaw.w3.org/css-validator/) with no issues found.
 ![Jigsaw validator message](assets/images/jigsaw.png)
 -This is page's rating in Lighthouse
-![Accessibility score](assets/images/lighthouse.png)
+![Accessibility score](assets/images/light.png)
 - JavaScript code passed through  Jshint with no significant issues.
 - Tested the site opens in Brave, Chrome & Safari without issues.
 - All links open to external pages as intended.
