@@ -12,7 +12,7 @@ body {
     background-repeat: no-repeat;
     color: white;
     font-family: 'Merriweather', 'sans-serif';
-    min-height:100vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -25,7 +25,7 @@ header img {
     height: 50px;
     border-radius: 50%;
     margin-right: 20px;
-    margin-left:10px;
+    margin-left: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.367);
 }
 
@@ -97,7 +97,7 @@ form button:hover {
 }
 
 .todo-list {
-    min-width: 60%;
+    min-width: 40%;
     list-style: none;
     font-family: "Roboto", sans-serif !important;
 }
@@ -198,7 +198,107 @@ select {
     transform: translateY(12rem) rotateZ(20deg);
     opacity: 0;
 }
-#four-o-four a{
-    color:white;
+
+#four-o-four a {
+    color: white;
     text-decoration: none;
+}
+
+@media screen and (max-width:1200px) {
+    form button {
+        color: white;
+        background-color: #f58634;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        width: 35px;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    form button i {
+        font-size: 25px;
+    }
+
+    .trash-btn,
+    .complete-btn {
+        color: white;
+        border: none;
+        cursor: pointer;
+        height: 100%;
+        width: 30px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    form button {
+        color: white;
+        background-color: #f58634;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        width: 35px;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+   
+
+    form button i {
+        font-size: 25px;
+
+    }
+
+    .trash-btn,
+    .complete-btn {
+        color: white;
+        border: none;
+        cursor: pointer;
+        height: 100%;
+        width: 30px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    form button {
+        color: white;
+        background-color: #f58634;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        width: 25%;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    form button i {
+        font-size: 25px;
+    }
+
+    .trash-btn,
+    .complete-btn {
+        color: white;
+        border: none;
+        cursor: pointer;
+        height: 100%;
+        width: 40%;
+    }
+
+    .select {
+        display: inline;
+        margin: 10px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    select {
+        color: #f58634;
+        width: 10rem;
+        cursor: pointer;
+        padding: 0.75rem;
+        font-size: 1rem;
+        border-radius: 4px;
+    }
+
+    #current-date {
+        font-size: 20px;
+        margin: 5px;
+    }
+
 }

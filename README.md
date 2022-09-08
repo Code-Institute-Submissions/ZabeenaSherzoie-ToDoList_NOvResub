@@ -1,108 +1,118 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+- [Contents](#contents)
+- [ToDoList](#ToDoList)
+  + [UX](#ux "UX")
+   + [Site Purpose](#site-purpose "Site Purpose")
+   + [Site Goal](#site-goal "Site Goal")
+   + [Audience](#audience "Audience")
+   + [Communication](#communication "Communication")
+   + [Current User Goals](#current-user-goals "Current User Goals")
+   + [New User Goals](#new-user-goals "New User Goals")
+ + [Design](#design "Design")
+   + [Colour Scheme](#color-scheme "Color Scheme")
+   + [Typography](#typography "Typography")
+   + [Imagery](#imagery "Imagery")
+ + [Features](#features "Features")
+   + [Existing Features](#existing-features "Existing Features")
+   + [Future Features](#future-features "Future Features")
+ + [Testing](#testing "Testing")
+   + [Validator Testing](#validator-testing "Validator Testing")
+ + [Technologies Used](#technologies-used "Technologies Used")
+   + [Main Languages Used](#main-languages-used "Main Languages Used")
+   + [Frameworks, Libraries & Programs Used](#frameworks-libraries-programs-used "Frameworks, Libraries & Programs Used")
+ + [Deployment](#deployment "Deployment")
+ + [Credits](#credits "Credits")
+   + [Content](#content "Content")
+   + [Media](#media "Media")
+# ToDoList
 
-Welcome ZabeenaSherzoie,
+![Site view across devices](assets/images/readme-images/am-I-responsive.png)
+The ToDoList site is live, the link to which can be found [HERE](https://zabeenasherzoie.github.io/ToDoList/)
+## UX:
+### Site Purpose:
+Friends' Horror Movie Cinema is a cinema built for those who love spendig time with their friends specialy watching horror movies and playing games all night.
+### Site Goal:
+The intent of the  website is to introduce our audience to such a cinema and to aid them in getting the most out of their time spending with their friends and giving them the oppurtunity to choose the location, snacks and even the light of the salon.
+### Audience:
+ It is targeted at an audience of all ages, who's only requirement is a group of great friends.
+### Communication:
+With a clear & bold design, this information is readily available to all who visit the site. The information is readily available without the need to search, and the pages are marked clearly so the users know in which page they are.
+### Current User Goals:
+To make regsitration with ease and navigate and interact with the page easily.
+### New User Goals:
+Get introduced with the cinema and have a great experience with navigation and registration.
+# Design:
+## Color Scheme:
+The colour palette was created with the thought to provide as much contrast as possible.The body background is black to make a good contrast with the ligth red headers and logo to remind the users of horror movies, besides white color is used for the paragraph in the introduction section to provide better contrast and readibility
+### Typography:
+Nosifer was selected for the main heading or logo on each of the pages, accompanied by Creepster for headers and Kdam Thmor Pro for main paragraph. Which the two first reminds us the texts in horror movies.The contrast between colors is checked in  [HERE](https://webaim.org/resources/contrastchecker/).
+![Contrast checker result](assets/images/readme-images/contrast-checker.png)
+### Imagery:
+All the imagery on the site, excluding the registeration page background and the home page hero image is my own photography. For the The Hero image and registeration page background I took the images from google and made a collage out of them.
+## Features:
+### Existing Features:
+#### Navigation Bar:
+This is included across all three pages, and provides people with an easy reference to navigate between the 'Home', 'Memories' & 'Registration' pages.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Navigation bar](assets/images/readme-images/navigationbar.png)
+#### Landing Page:
+This defines the feel of the website, providing the user with an image that they can easily associate to what the company is & does.
+![Hero image](assets/images/readme-images/landing-page.png)
+#### Intorduction:
+Talks about the website and how this idea came to mind.
+![Introduction](assets/images/readme-images/introduction.png)
+#### Memory Page:
+Includes some memories of friends who has experienced this cinema.
+![Memories](assets/images/readme-images/memories.png)
+#### Registration Page:
+Which you can input your email and let us manager other stuff if you want to have such an experiene.
+![Introduction](assets/images/readme-images/register.png)
+### Future Features:
+- An Experiences page
+- A Movies page to show available movies
+## Testing:
+The media queries were very challenging. It took a lot of trial & error in the Chrome Dev tool to adjust everything accordingly so that it would not display horribly when the page was to be resized.
+I faced problem figuring out the right rules for the form  responsivity issue specialy for less than 500px wide screens then I figured out to give the select element a float rigth and to put the form element inside a div.
+I realised that my memory page was loading slowly due to images sizes so I changed thier format from jpg and png to webp and it solved the problem.
+While running the html files through W3C validator, upon initial run, some sections failed. Because I used empty h1's to place some icons througout the page once I removed them I passed it.
+I also got stuck with the div elements' contents overriding the footer and I tried so many approach but then realized that the solution was very easy and I add margins the problem was solved.
+### Validator Testing:
+- Html files pass through the [W3C validator](https://validator.w3.org/) with no issues found.
+![html-validator](/assets/images/readme-images/html-validator.png)
+- Html files pass through the [Jigsaw validator](https://jigsaw.w3.org/css-validator/) with no issues found.
+![Jigsaw validator message](assets/images/readme-images/css-validator.png)
+- Page has an excellent Accessibility rating in Lighthouse
+![Accessibility score](assets/images/readme-images/light-house.png)
+- Tested the site opens in Brave, Chrome & Safari without issues.
+- All links open to external pages as intended.
+## Technologies Used:
+### Main Languages Used:
+- HTML5
+- CSS3
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+### Frameworks, Libraries & Programs Used:
+- Google Fonts - for the font families: Creeper, Nosifer & Kdam Thmor Pro. 
+- Font Awesome - to add icons to the social links in the header nav and footer element.
+- GitPod - to creat my html files & styling sheet before pushing the project to Github.
+- GitHub - to store my repository for submission.
+- Adobe creative cloud express for making collages.
+- Am I Responsive? - to ensure the project looked good across all devices.
+## Deployment:
+The site was deployed to GitHub pages. The steps to deploy are as follows:
+- In the GitHub repository, navigate to the Settings tab
+- Go to the page section.
+ From the source section drop-down menu, select the main Branch
+- Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+- The live link can be found [HERE-->FHMC](https://zabeenasherzoie.github.io/first-project-FHMC/)
+## Credits:
 
-## Gitpod Reminders
+### Content:
+As my knowledge of implementation is limited at this point of my learning journey, I took inspiration for the design of the memory page, along with the display of the social links in the footer element from the 'love running'project
+My mentor [Malia Havlicek](https://github.com/maliahavlicek) helped me understand flexbox which was very help full in building a responsive webpage.
+### Media:
+The home page image and the registration page's background are collages I made by  Adobe Creative Cloud Express using some Movie Posters I searched in Google.
+All other images in the memory page is my own media and photography.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
