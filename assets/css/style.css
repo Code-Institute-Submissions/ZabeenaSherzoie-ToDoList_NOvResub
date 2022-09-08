@@ -214,7 +214,7 @@ select {
     justify-content: center;
     align-items: center;
 }
-#input{
+#inp{
     min-height: 2vh;
     display: flex;
     justify-content: center;
