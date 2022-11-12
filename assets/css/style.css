@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* Main styles for body */
 body {
     background-color: #00af91;
     background-image: linear-gradient(315deg, #00af91 0%, #f58634 75%);
@@ -28,16 +28,16 @@ header img {
     margin-left: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.367);
 }
-
+/* Aligning the h1 container div*/
 #main-title {
     text-align: center;
     padding: 10px;
 }
-
+/* Styling the cointer box*/
 .box {
     width: 50%;
     background-color: rgb(46, 41, 41);
-    min-height: 70vh;
+    min-height: 50vh;
     border-radius: 4px;
     margin: 7%;
     padding-bottom: 3.5rem;
@@ -47,13 +47,14 @@ header img {
 }
 
 header {
-    font-size: 1.2rem;
+    font-size: 120%;
     font-family: cursive;
+    margin: 20px 5px;
 }
 
 header,
 form {
-    min-height: 20vh;
+    min-height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,37 +68,40 @@ form button {
     border: none;
     background: white;
 }
-
+/*Task input field's rules*/
 form input {
-    width: 43%;
+    width: 70%;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     outline: none;
 }
-
+/*Add button's styling*/
 form button {
     color: white;
     background-color: #f58634;
     cursor: pointer;
     transition: all 0.3s ease;
-    width: 6%;
+    width: 15%;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
-    margin:5px;
+    margin: 5px;
 }
-label{
-    margin:5px;
+
+label {
+    margin: 5px;
     font-size: 20px;
 }
+/*Button style while hover*/
 form button:hover {
     background-image: linear-gradient(315deg, #00af91 0%, #f58634 74%);
     color: white;
 }
-
+/* Tasks container rules*/
 .todo-container {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .todo-list {
@@ -105,6 +109,10 @@ form button:hover {
     min-width: 40%;
     list-style: none;
     font-family: "Roboto", sans-serif !important;
+}
+
+h1 {
+    font-size: 200%;
 }
 
 .todo {
@@ -117,16 +125,25 @@ form button:hover {
     align-items: center;
     transition: all 0.5s ease;
     height: 40px;
+
+}
+
+#inputt {
+    width: auto;
 }
 
 .todo li {
     flex: 1;
+
 }
 
 .todo-item {
+    box-sizing: content-box;
+    height: 100%;
     padding: 0rem 0.5rem;
+    overflow: scroll;
 }
-
+/* Drop down style rules*/
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -140,7 +157,7 @@ select {
     position: relative;
     overflow: hidden;
 }
-
+/* Drop down style rules*/
 select {
     color: #000000;
     width: 10rem;
@@ -149,7 +166,7 @@ select {
     font-size: 1rem;
     border-radius: 4px;
 }
-
+/* Drop down style rules after selection*/
 .select::after {
     content: "\25BC";
     position: absolute;
@@ -166,7 +183,7 @@ select {
     color: #f58634;
     border-left: 1.3px solid rgba(0, 0, 0, 0.364);
 }
-
+/*Buttons related to tasks style rules*/
 .trash-btn,
 .complete-btn {
     color: white;
@@ -198,38 +215,40 @@ select {
     text-decoration: line-through;
     opacity: 0.5;
 }
-
+/*Animation style while deleting a task*/
 .fall {
     transform: translateY(12rem) rotateZ(20deg);
     opacity: 0;
 }
-
+/*404 pages style*/
 #four-o-four a {
     color: white;
     text-decoration: none;
 }
-#select{
+
+#select {
     min-height: 2vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#inp{
+/*Form style rules*/
+#inp {
     min-height: 2vh;
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
+/*Responsive for less than 1200px*/
 @media screen and (max-width:1200px) {
+
     form button {
-        color: white;
-        background-color: #f58634;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        width: 35px;
-        border-bottom-right-radius: 5px;
-        border-top-right-radius: 5px;
+        width: 15%;
+    }
+
+    form input {
+        width: 60%;
     }
 
     form button i {
@@ -245,19 +264,17 @@ select {
         width: 30px;
     }
 }
-
+/*Responsive for less than 900px*/
 @media screen and (max-width:900px) {
+
     form button {
-        color: white;
-        background-color: #f58634;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        width: 35px;
-        border-bottom-right-radius: 5px;
-        border-top-right-radius: 5px;
+        width: 20%;
     }
 
-   
+    form input {
+        width: 60%;
+    }
+
 
     form button i {
         font-size: 25px;
@@ -273,20 +290,39 @@ select {
         width: 30px;
     }
 }
-
+/*Responsive for less than 500px*/
 @media screen and (max-width:500px) {
-    form button {
-        color: white;
-        background-color: #f58634;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        width: 25%;
-        border-bottom-right-radius: 5px;
-        border-top-right-radius: 5px;
+    body {
+        flex-direction: column;
     }
+
+    .box {
+        width: 90%;
+    }
+
+    form button {
+        width: 15%;
+    }
+
     form button i {
         font-size: 25px;
     }
+
+    #inputt {
+        order: 2;
+        padding: 0 0 0 10px;
+
+    }
+
+    form input {
+        width: 70%;
+    }
+
+
+    #inp {
+        flex-direction: column;
+    }
+
 
     .trash-btn,
     .complete-btn {
@@ -296,6 +332,7 @@ select {
         height: 100%;
         width: 20%;
     }
+
 
     .select {
         display: inline;
@@ -318,4 +355,87 @@ select {
         margin: 5px;
     }
 
+}
+/*Responsive for less than 370px*/
+@media screen and (max-width:370px) {
+    body {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 90%;
+    }
+
+    form button {
+        width: 20%;
+    }
+
+    form input {
+        width: 65%;
+    }
+
+    #inputt {
+        padding: 0 0 0 10px;
+    }
+}
+/*Responsive for less than 280px*/
+@media screen and (max-width:280px) {
+    body {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 90%;
+    }
+
+    form button {
+        width: 20%;
+
+    }
+
+    form input {
+        width: 65%;
+    }
+
+    #inputt {
+
+        padding: 0 0 0 10px;
+    }
+}
+/*Responsive for less than 220px*/
+@media screen and (max-width:220px) {
+    body {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 90%;
+    }
+
+    form button {
+        width: 25%;
+        margin: 0 35%;
+    }
+
+    form input {
+        width: 88%;
+    }
+
+    #inputt {
+        flex-direction: column;
+        padding: 0 0 0 10px;
+    }
+
+    header img {
+        width: 30px;
+        height: 30px;
+    }
+
+    #current-date {
+        font-size: 80%;
+    }
+
+    label {
+        font-size: 15px;
+    }
 }
