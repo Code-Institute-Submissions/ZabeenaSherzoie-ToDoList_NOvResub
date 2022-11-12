@@ -19,7 +19,7 @@ document.getElementById('current-date').innerHTML = todayDate.toDateString();
 function addTodo(event) {
     event.preventDefault();
     var task=document.getElementById('input').value
-    /*Input validation */
+    //Input validation 
     if (task===''){
         alert("you can't add empty task")
     }else{

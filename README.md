@@ -25,7 +25,7 @@
    + [Media](#media "Media")
 # ToDoList
 
-![Site view across devices](assets/images/am-i-resposive.png)
+![Site view across devices](assets/images/am-i-responsive.png)
 The ToDoList site is live, the link to which can be found [HERE](https://zabeenasherzoie.github.io/ToDoList/)
 ## UX:
 ### Site Purpose:
@@ -104,7 +104,7 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 ## Credits:
 
 ### Content:
-I watched some youtube video for JavaScript part of my code and combined and manipulate the codes as needed.
+The base code of the project is taken from  [This tutorial](https://www.youtube.com/watch?v=Ttf3CEsEwMQ&t=1104s&ab_channel=developedbyed) in youtube.
 ### Media:
 The image in the header was downloaded from google.
 
