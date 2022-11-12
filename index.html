@@ -14,19 +14,27 @@
     <title>TO DO LIST</title>
 </head>
 <body>
-    <h1 id='main-title'>Let's Do It Today <i class="fa-solid fa-face-smile-wink"></i></h1>
+    <!-- h1 let's do it text-->
+    <div id='main-title'><h1 >Let's Do It Today <i class="fa-solid fa-face-smile-wink"></i></h1></div>
+    <!--The container box for tasks and input-->
     <div class='box'>
+        <!--Show the date as a header-->
         <header>
             <img src="assets/images/check-mark.png" alt='check mark'>
             <h1 id='current-date'>Date</h1>
         </header>
+        <!--Task input and submit button field-->
         <form id ='inp'>
             <label for="input">New Task</label>
-            <input id ='input' type="text" class='todo-input' />
+            <div id="inputt">
+            
+            <input id ='input' type="text" placeholder="Task" class='todo-input' required>
             <button aria-label='add' class='todo-button' type="submit">
                 <i class="fa-regular fa-square-plus"></i>
             </button>
+            </div>
         </form>
+        <!--Drop down field-->
         <form id ='select' >
             <div class="select">
                 <select name="todos" class="filter-todo">
@@ -36,11 +44,13 @@
                 </select>
             </div>
         </form>
+        <!-- A container to list the tasks to be don-->
         <div class="todo-container">
             <ul class="todo-list"></ul>
         </div>
 
     </div>
+    <!--JavaScript file's link-->
     <script src='assets/js/script.js'> </script>
 
 </body>

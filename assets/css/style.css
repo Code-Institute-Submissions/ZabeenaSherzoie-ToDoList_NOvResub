@@ -238,7 +238,7 @@ select {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    padding:5px;
 }
 /*Responsive for less than 1200px*/
 @media screen and (max-width:1200px) {
